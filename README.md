@@ -12,7 +12,7 @@ $form = ActiveForm::begin();
 echo $form->field($address, 'city_id')
 
     ->widget(Kladr::className(), [
-            'type'    => Kladr::TYPE_CITY,
+            'type'    => Kladr::TYPE_ALL,
         'options' => [
             'placeHolder' => $model->getAttributeLabel('city_id'),
             'class' => 'form__input'
