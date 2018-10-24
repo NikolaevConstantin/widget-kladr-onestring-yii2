@@ -1,8 +1,8 @@
-# yii2-klard
+# yii2-klard-onestring
 widgets for easy integration kladr.ru (autocomplete regions, citys, street, etc.) in Yii2
 
 install:
-composer require andkon/yii2kladr
+composer require --prefer-dist nikolaevconstantin/yii2kladronestring:"dev-master"
 
 use:
 $address = new Address(); // your address model

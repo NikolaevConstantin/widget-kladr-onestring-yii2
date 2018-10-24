@@ -1,6 +1,6 @@
 
 <?php
-use andkon\yii2kladr\assets\KladrAsset;
+use nikolaevconstantin\yii2kladronestring\assets\KladrAsset;
 
 KladrAsset::register($this); 
 echo '<script src="/js/lib/jquery-1.11.1.min.js"></script>';

@@ -6,9 +6,9 @@
  * Time: 18:09
  */
 
-namespace andkon\yii2kladr;
+namespace nikolaevconstantin\yii2kladronestring;
 
-use andkon\yii2kladr\assets\KladrAsset;
+use nikolaevconstantin\yii2kladronestring\assets\KladrAsset;
 use yii\helpers\Html;
 use yii\widgets\InputWidget;
 

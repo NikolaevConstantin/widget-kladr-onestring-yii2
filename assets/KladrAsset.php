@@ -1,6 +1,6 @@
 <?php
 
-namespace andkon\yii2kladr\assets;
+namespace nikolaevconstantin\yii2kladronestring\assets;
 
 use yii\web\AssetBundle;
 

@@ -6,7 +6,7 @@
  * Time: 12:29
  */
 
-namespace andkon\yii2kladr;
+namespace nikolaevconstantin\yii2kladronestring;
 
 /**
  * Класс запроса

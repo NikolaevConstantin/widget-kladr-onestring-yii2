@@ -6,7 +6,7 @@
  * Time: 12:32
  */
 
-namespace andkon\yii2kladr;
+namespace nikolaevconstantin\yii2kladronestring;
 
 /**
  * Контроллер для доступа к сервису
