@@ -1,9 +1,8 @@
 {
-  "name": "NikolaevConstantin/yii2kladronestring",
+  "name": "nikolaevconstantin/yii2kladronestring",
   "description": "Widget for yii2 Kladr onestring",
   "homepage": "https://github.com/NikolaevConstantin/widget-kladr-onestring-yii2",
   "type": "project",
-  "license": "BSD-3-Clause",
   "minimum-stability": "dev",
   "require": {
       "bower-asset/jquery.kladr": "*"
