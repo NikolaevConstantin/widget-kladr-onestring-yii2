@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: andkon
+ * User: niko
  * Date: 28.06.16
  * Time: 18:09
  */
@@ -137,7 +137,10 @@ class Kladr extends InputWidget
                 parentInput:"#' . self::$inputs[self::TYPE_STREET][1] . '"})';
                 break;
             case self::TYPE_ALL:
-                $script = '$("#' . $this->containerId . ' #' . $fakeId . '").kladr({oneString: "true"})';
+                $script = '$("#' . $this->containerId . ' #' . $fakeId . '").kladr({oneString: "true",  '
+                    . 'labelFormat:  function( obj, query) { return obj.fullName },'
+                    . 'valueFormat:  function( obj, query) { return obj.fullName }'
+                    . '})';
                 break;
             case self::TYPE_ZIP:
                 $zipJs = '$("#' . self::$inputs[self::TYPE_BUILDING][1] . '")
@@ -157,10 +160,11 @@ class Kladr extends InputWidget
 
         $script .= '.change(
             function(event){
-                $("#' . $this->containerId . ' #' . $id . '").val($(event.target).attr("data-kladr-id"));
+                var $name_fiel = $("#' . $this->containerId . ' #' . $fakeId . '").val();
+                $("#' . $this->containerId . ' #' . $id . '").val($name_fiel);
             }
         )';
-
+        
         $this->getView()->registerJs($script);
     }
 }
